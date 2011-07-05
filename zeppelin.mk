@@ -111,13 +111,12 @@ else
 LOCAL_KERNEL := $(TARGET_PREBUILT_KERNEL)
 endif
 
-$(call inherit-product-if-exists, device/motorola/zeppelin/KernelModules.mk)
-
 PRODUCT_COPY_FILES += \
     device/motorola/zeppelin/setrecovery/prebuilt:recovery/root/sbin/setrecovery
 
 PRODUCT_COPY_FILES += \
-    $(LOCAL_KERNEL):kernel
+    $(LOCAL_KERNEL):kernel \
+    device/motorola/zeppelin/dhd.ko:system/lib/dhd.ko
 
 $(call inherit-product-if-exists, vendor/motorola/zeppelin/zeppelin-vendor.mk)
 
