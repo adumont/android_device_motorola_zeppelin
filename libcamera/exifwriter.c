@@ -178,7 +178,7 @@ void writeExif( void *origData, void *destData , int origSize , uint32_t *result
 
     (*it).Tag = TAG_MODEL;
     (*it).Format = FMT_STRING;
-    (*it).Value = "MB501 with CyanogenMOD\0";
+    (*it).Value = "MB501\0";
     (*it).DataLength = strlen((*it).Value);
     (*it).GpsTag = FALSE;
 
