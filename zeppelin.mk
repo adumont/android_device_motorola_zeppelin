@@ -89,6 +89,9 @@ PRODUCT_PACKAGES += \
     dexpreopt \
     setrecovery
 
+# Chinese stuff
+PRODUCT_PACKAGES += OpenWnn PinyinIME libWnnEngDic libWnnJpnDic libwnndict
+
 DISABLE_DEXPREOPT := false
 
 # we have enough storage space to hold precise GC data
