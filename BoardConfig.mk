@@ -83,8 +83,6 @@ BOARD_HAVE_BLUETOOTH_BCM := true
 #BOARD_FLASH_BLOCK_SIZE := 131072
 
 # Graphics
-# Use RGB565 surfaces until userspace drivers are upgraded
-BOARD_NO_RGBX_8888 := true
 BOARD_AVOID_DRAW_TEXTURE_EXTENSION := true
 TARGET_LIBAGL_USE_GRALLOC_COPYBITS := true
 BOARD_EGL_CFG := device/motorola/zeppelin/egl.cfg
