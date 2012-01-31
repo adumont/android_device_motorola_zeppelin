@@ -34,3 +34,6 @@ ro.media.dec.jpeg.memcap=20000000
 # Persist default parameters
 persist.sys.use_dithering=1
 persist.sys.purgeable_assets=0
+
+# Disable ICS rotation animation, it's too slow
+persist.sys.rotationanimation=false
