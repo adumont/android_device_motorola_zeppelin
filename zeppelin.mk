@@ -86,7 +86,10 @@ PRODUCT_PACKAGES += \
     libcamera \
     libaudio \
     rzscontrol \
+    dexpreopt \
     setrecovery
+
+DISABLE_DEXPREOPT := false
 
 # we have enough storage space to hold precise GC data
 PRODUCT_TAGS += dalvik.gc.type-precise
